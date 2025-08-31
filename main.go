@@ -1,10 +1,9 @@
 package main
 
 import (
-	taskFive "WBTechL1/5"
-	"time"
+	taskSix "WBTechL1/6"
 )
 
 func main() {
-	taskFive.Timeout(5 * time.Second)
+	taskSix.EndGoroutines()
 }
