@@ -1,9 +1,9 @@
 package main
 
 import (
-	taskSix "WBTechL1/6"
+	taskSeven "WBTechL1/7"
 )
 
 func main() {
-	taskSix.EndGoroutines()
+	taskSeven.WriteToMap()
 }
