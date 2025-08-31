@@ -1,20 +1,10 @@
 package main
 
 import (
-	taskThree "WBTechL1/3"
-	"context"
-	"fmt"
-	"os/signal"
-	"syscall"
+	taskFive "WBTechL1/5"
+	"time"
 )
 
 func main() {
-	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
-	defer stop()
-	taskThree.StartWorkers(3, ctx)
-
-	select {
-	case <-ctx.Done():
-		fmt.Println("main goroutine has finished")
-	}
+	taskFive.Timeout(5 * time.Second)
 }
