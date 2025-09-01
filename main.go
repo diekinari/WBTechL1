@@ -1,11 +1,9 @@
 package main
 
 import (
-	taskEight "WBTechL1/8"
-	"fmt"
+	taskNine "WBTechL1/9"
 )
 
 func main() {
-	num := taskEight.ChangeBit(42, 2, 1)
-	fmt.Println(num)
+	taskNine.StartConveyer()
 }
