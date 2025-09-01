@@ -1,9 +1,11 @@
 package main
 
 import (
-	taskSeven "WBTechL1/7"
+	taskEight "WBTechL1/8"
+	"fmt"
 )
 
 func main() {
-	taskSeven.WriteToMap()
+	num := taskEight.ChangeBit(42, 2, 1)
+	fmt.Println(num)
 }
