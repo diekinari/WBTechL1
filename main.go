@@ -1,12 +1,12 @@
 package main
 
 import (
-	taskEleven "WBTechL1/11"
+	taskTwelve "WBTechL1/12"
 	"fmt"
 )
 
 func main() {
-	result := taskEleven.FindIntersection([]int{1, 2, 3}, []int{2, 3, 4})
+	result := taskTwelve.MakeSet([]string{"cat", "cat", "dog", "cat", "tree", "tree", "dog"})
 	fmt.Println(result)
 
 }
