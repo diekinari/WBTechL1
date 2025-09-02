@@ -1,12 +1,12 @@
 package main
 
 import (
-	taskTen "WBTechL1/10"
+	taskEleven "WBTechL1/11"
 	"fmt"
 )
 
 func main() {
-	result := taskTen.GroupTemperature()
+	result := taskEleven.FindIntersection([]int{1, 2, 3}, []int{2, 3, 4})
 	fmt.Println(result)
 
 }
