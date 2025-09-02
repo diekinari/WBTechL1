@@ -1,9 +1,12 @@
 package main
 
 import (
-	taskNine "WBTechL1/9"
+	taskTen "WBTechL1/10"
+	"fmt"
 )
 
 func main() {
-	taskNine.StartConveyer()
+	result := taskTen.GroupTemperature()
+	fmt.Println(result)
+
 }
