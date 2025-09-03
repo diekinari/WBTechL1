@@ -1,10 +1,10 @@
 package main
 
 import (
-	taskFourteen "WBTechL1/14"
+	taskFifteen "WBTechL1/15"
 )
 
 func main() {
-	taskFourteen.RecognizeType(31.3)
+	taskFifteen.SomeFunc()
 
 }
