@@ -1,12 +1,10 @@
 package main
 
 import (
-	taskThirteen "WBTechL1/13"
-	"fmt"
+	taskFourteen "WBTechL1/14"
 )
 
 func main() {
-	a, b := taskThirteen.ChangePositions(15, 10)
-	fmt.Println(a, b)
+	taskFourteen.RecognizeType(31.3)
 
 }
