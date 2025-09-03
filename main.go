@@ -1,12 +1,12 @@
 package main
 
 import (
-	taskTwelve "WBTechL1/12"
+	taskThirteen "WBTechL1/13"
 	"fmt"
 )
 
 func main() {
-	result := taskTwelve.MakeSet([]string{"cat", "cat", "dog", "cat", "tree", "tree", "dog"})
-	fmt.Println(result)
+	a, b := taskThirteen.ChangePositions(15, 10)
+	fmt.Println(a, b)
 
 }
