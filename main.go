@@ -1,9 +1,11 @@
 package main
 
 import (
-	taskEighteen "WBTechL1/18"
+	taskNineteen "WBTechL1/19"
+	"fmt"
 )
 
 func main() {
-	taskEighteen.ConcurrentIncrement()
+	res := taskNineteen.RevertString("главрыба")
+	fmt.Println(res)
 }
