@@ -1,11 +1,11 @@
 package main
 
 import (
-	taskNineteen "WBTechL1/19"
+	taskTwenty "WBTechL1/20"
 	"fmt"
 )
 
 func main() {
-	res := taskNineteen.RevertString("главрыба")
+	res := taskTwenty.RevertSentence("snow dog sun")
 	fmt.Println(res)
 }
