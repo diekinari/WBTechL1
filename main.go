@@ -1,10 +1,11 @@
 package main
 
 import (
-	taskFifteen "WBTechL1/15"
+	taskSixteen "WBTechL1/16"
+	"fmt"
 )
 
 func main() {
-	taskFifteen.SomeFunc()
-
+	result := taskSixteen.QuickSort([]int{3, 7, 8, 5, 2, 1, 9, 5, 4})
+	fmt.Println(result)
 }
