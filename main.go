@@ -1,11 +1,19 @@
 package main
 
 import (
-	taskTwenty "WBTechL1/20"
-	"fmt"
+	taskTwentyOne "WBTechL1/21"
 )
 
 func main() {
-	res := taskTwenty.RevertSentence("snow dog sun")
-	fmt.Println(res)
+	emailSvc := &taskTwentyOne.EmailService{From: "noreply@acme.local"}
+	smsSvc := &taskTwentyOne.SMSService{SenderID: "ACME"}
+
+	emailNotifier := taskTwentyOne.NewEmailAdapter(emailSvc, "ops@acme.local", "ALERT")
+	smsNotifier := taskTwentyOne.NewSMSAdapter(smsSvc, "+1234567890")
+
+	longMsg := "Service payment-processor is down\nerror: connection refused\nplease investigate immediately"
+
+	// Подставляем разные адаптеры в один код клиента, не меняя legacy-логику
+	taskTwentyOne.SendAlert(emailNotifier, longMsg)
+	taskTwentyOne.SendAlert(smsNotifier, longMsg)
 }
