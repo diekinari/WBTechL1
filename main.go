@@ -1,15 +1,13 @@
 package main
 
 import (
-	taskTwentyTwo "WBTechL1/22"
+	taskTwentyThree "WBTechL1/23"
 	"fmt"
-	"math"
-	"math/big"
 )
 
 func main() {
-	a := big.NewInt(int64(math.Pow(2, 20)))
-	b := big.NewInt(int64(math.Pow(2, 25)))
-	res := taskTwentyTwo.MathBigNumbers(a, b, "*")
-	fmt.Println(res)
+	s := []int{0, 1, 2, 3, 4}
+	newS := taskTwentyThree.DeleteItemFromSlice(s, 3)
+	fmt.Printf("s: %v\n", s)
+	fmt.Printf("newS: %v \n", newS)
 }
